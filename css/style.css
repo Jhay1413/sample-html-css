@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+     /* Adjust the background color and transparency using rgba */
+    z-index: 10; /* Ensures the header stays on top of other content */
+    padding: 5px 0; /* Add some padding to the header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(5px);
+    background-color: rgb(19, 53, 44)
+}   
+.header h1{
+    color: #fff;
+}
+.header-title{
+    margin-left: 100px;
+}
+.header .nav-link ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+   
+}
+.header .nav-link li{
+    padding: 10px;
+    margin-right: 10px;
+    
+}
+.header .nav-link li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    
+}
+.first-section{
+    padding-top: 6rem;
+    width: 100%;
+    height: 100vh;
+    
+  
+}
+.section-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center;     /* Vertically center the text */
+    height: 100vh;            /* Set the container height; adjust as needed */
+    width: 100%;     
+    color: #fff;
+}
+.section-title h1{
+    font-size: 5rem;
+}
+.section-title h2{
+    padding: 20px;
+    border: 5px solid rgb(235, 231, 231);
+}
+.second-section{
+    width: 100%;
+    opacity: 0;
+    transition: opacity 3s;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin:auto;
+    background-color: #fff;
+   
+ 
+}
+.second-section-content{
+    width: 80%;
+    margin:auto;
+    padding: 15px;
+    grid-column: span 2;
+    
+}
+.second-section-second-content img{
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    z-index: 0;
+}
+.second-section-second-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+}
+.third-section{
+    width: 100%;
+  
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin:auto;
+    opacity: 0;
+    transition: opacity 3s;
+}
+.third-section-content{
+    width: 100%;
+    margin: auto;
+   
+    background-color: #fff;
+    border-radius: 10px;
+   
+}
+.third-section-title{
+    font-size: 3rem;
+    text-align: center;
+   text-decoration: underline;
+}
+.third-section-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 90%;
+    padding: 50px;
+    margin:auto;
+}
+.card{
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   
+}
+.card-title{
+    padding: 10px;
+    font-size: 2rem;
+    background: 
+    linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),       
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+.card-description{
+    padding: 20px;
+    font-size:1rem;
+}
+.visible {
+    opacity: 1;
+}
+.fourth-section{
+    width: 100%;
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color: #fff;
+    
+}
+.fourth-section-title{
+    text-align: center;
+    padding: 20px;
+}
+.fourth-section-content{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+   
+}
+.fourth-section-species{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.fourth-section-species-content{
+    display: flex;
+    justify-content: space-between;
+}
+.fourth-section-species-img{
+    width: 100%;
+    padding: 20px;
+}
+
+  
+.fourth-section-species-img img{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+.fourth-section-species-info{
+ 
+   padding: 20px
+   
+}
+.fourth-section-species-title{
+    font-size: 3rem;
+}
+
+.fifth-section{
+  margin-top: 50px;
+  background-color: #fff;
+ 
+}
+.fifth-section-title{
+    padding: 50px;
+    text-align: center;
+}
+.fifth-section-content{
+    width: 80%;
+    margin:auto;
+}
+.fifth-section-info{
+    font-size: 25px;
+}
+.organization{
+    
+    width: 100%;
+    background-color: #fff;
+}
+.organization-content{
+    width: 80%;
+    margin: auto;
+}
+.organization-title{
+    font-size:2rem;
+    text-align: center;
+    font-weight: bold;
+}
+.organization-description{
+   
+}
+.contact{
+    width: 100%;
+    background-color: #fff;
+   
+}
+.contact-contents{
+    width: 80%;
+    display: flex;
+    padding: 20px;
+    margin:auto;
+    justify-content: space-between;
+}
